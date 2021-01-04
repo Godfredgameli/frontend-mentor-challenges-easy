@@ -1,5 +1,23 @@
+@import url(https://fonts.google.com/specimen/Kumbh+Sans);
+
 body, html{
     padding: 0;
     margin: 0;
     box-sizing: border-box;
 }
+//primary
+
+$dark-cyan : hsl(185, 75%, 39%);
+$dark-desaturated-blue : hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+//neutral
+$dark-gray : hsl(0, 0%, 59%);
+
+//font-size for body and copy
+$font-size: 18px;
+
+//font family and weight
+$font-family : Kumbh Sans;
+$font-light: 400;
+$font-heavy: 700;
