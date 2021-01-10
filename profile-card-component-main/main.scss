@@ -1,0 +1,148 @@
+
+
+//primary
+
+$dark-cyan : hsl(185, 75%, 39%);
+$dark-desaturated-blue : hsl(229, 23%, 23%);
+$dark-grayish-blue: hsl(227, 10%, 46%);
+
+//neutral
+$dark-gray : hsl(0, 0%, 59%);
+
+//font-size for body and copy
+$font-size: 18px;
+
+//font family and weight
+$font-family : Kumbh Sans;
+$font-light: 400;
+$font-heavy: 700;
+
+
+body, html{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: $dark-cyan;
+    font-family: $font-family;
+    
+}
+
+
+.main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1440;
+    height: 97vh;
+    background-color: $dark-cyan;
+    
+    background-image: url(images/bg-pattern-bottom.svg), url(images/bg-pattern-top.svg);
+    background-repeat: no-repeat;
+    background-position: 600px 450px , -400px -550px;
+    
+}
+.profile-card{
+    width: 35%;
+    height: 500px;
+    background-color: $dark-gray;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    padding: 0%;
+    background-image: url(images/bg-pattern-card.svg);
+    z-index: 1;
+}
+.profile-header{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 175px;
+}
+.profile-pic{
+    border-radius: 50%;
+    margin-bottom: -175px;
+    z-index: 3;
+}
+.profile-body{
+    display: block;
+    text-align: center;
+    width: 100%;
+    height: 225px;
+    background-color: white;
+    z-index: 2;
+    
+
+
+    .bio{
+        margin-top: 100px;
+      font-weight: $font-heavy;
+      color: $dark-desaturated-blue;
+      font-size: $font-size;
+
+      .light{
+          font-weight: $font-light;
+          color: $dark-grayish-blue;
+      }
+    }
+    
+    .location{
+        font-weight: $font-light;
+        color: $dark-grayish-blue;
+        font-size: 14px;
+    }
+}
+p{
+    line-height: 0;
+}
+.profile-footer{
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    border-top: 0.5px $dark-gray solid ;
+    background-color: white;
+    text-align: center;
+    border-bottom-left-radius: 20px;
+    border-bottom-right-radius: 20px;
+
+    .total{
+        font-weight: $font-heavy;
+        color: $dark-desaturated-blue;
+        font-size: $font-size;
+    }
+    .info{
+        font-weight: $font-light;
+        color: $dark-grayish-blue;
+        font-size: 12px;
+    }
+}
+.attribution { 
+    font-size: 11px; 
+    text-align: center; 
+}
+.attribution a { 
+    color: hsl(228, 45%, 44%); 
+}
+//responsiveness for very small phones
+@media screen and (max-width: 375px){
+    .profile-card{
+        width: 90%;
+        height: 400px;
+    }
+    .profile-pic{
+        margin-bottom: -145px;
+    }
+    .main{
+        background-repeat: no-repeat;
+        background-position: 200px 200px , -750px -650px;
+    }
+}
+//resonsiveness for small phones and tablets
+@media screen and (max-width: 900px){
+    .profile-card{
+        width: 70%;
+     
+    }
+}
