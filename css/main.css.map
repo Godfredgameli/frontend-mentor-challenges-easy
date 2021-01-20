@@ -1,9 +1,0 @@
-{
-    "version": 3,
-    "mappings": "AAAA,OAAO,CAAC,iDAAI;AAEZ,AAAA,IAAI,EAAE,IAAI,CAAA;EACN,OAAO,EAAE,CAAC;EACV,MAAM,EAAE,CAAC;EACT,UAAU,EAAE,UAAU;CACzB",
-    "sources": [
-        "../profile-card-component-main/main.scss"
-    ],
-    "names": [],
-    "file": "main.css"
-}
